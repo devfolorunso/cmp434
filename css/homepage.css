@@ -1,0 +1,226 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #001a57;
+    color: white;
+}
+
+.container {
+    /* padding: 0 5%; */
+}
+
+/* Header styles */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+
+
+/* Styles for the top bar wrapper */
+.top-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:15px;
+    background-color: #001a57;
+    width: 100% !important;
+}
+
+/* Styles for the right part of the top bar */
+.top-bar-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50% !important;
+    color: #fff !important;
+}
+/* Styles for the right part of the top bar */
+.top-bar-inner-right {
+    position: relative;
+}
+
+/* Seperator */
+.top-bar-inner-right::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+    height: 35px;
+    width: 2px;
+    background-color: #3a517c; 
+}
+
+.top-bar-inner-right a{
+    text-decoration: none;
+    color: #fff !important;
+}
+.top-bar-inner-right p{
+    margin-bottom: 10px;
+    text-align: right !important;
+}
+/* Styles for the left part of the top bar */
+.top-bar-inner-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-inner-left p{
+    margin-right: 10px;
+}
+/* Styles for social icons */
+.social {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.social li {
+    margin-right: 10px; /* Adjust spacing between icons */
+}
+
+/* Style for the Facebook icon */
+.facebook a {
+    background-color: #3b5998 ; 
+}
+
+/* Style for the Twitter icon */
+.twitter a {
+    background-color: #1da1f2; 
+}
+
+/* Style for the Vimeo icon */
+.vimeo a {
+    background-color: #1ab7ea; 
+}
+
+/* Style for the YouTube icon */
+.youtube a {
+    background-color: #ff0000; /
+}
+
+/* Additional styles for all social icons */
+.social li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff; /* Default icon color */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+/* Icon hover effect */
+.social li a:hover {
+    background-color: #001a57; /* Change background color on hover */
+}
+
+
+
+/* Navigation bar styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid white;
+    margin-top: 30px;
+    background: #fff;
+    border-top-left-radius: 0; /*Border radius for top-left corner*/
+    border-top-right-radius: 0; /* Border radius for top-right corner */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #001a57;
+    padding: 15px 20px; /* Adjusted padding values */
+    display: block;
+}
+
+nav ul li a:hover {
+    border: none; /* Remove the border */
+    border-bottom: 5px solid #001a57; /* Add a 5px thick underline */
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #001a57;
+    width: 150px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Image slider styles */
+.slider {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slider img {
+    width: 50%;
+}
+
+
+/* Main content styles */
+.main {
+    margin-top: 50px;
+    padding: 30px;
+    color: #fff; 
+}
+
+.main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-center:justify;
+    width:50%;
+}
+/* Footer styles */
+.footer {
+    background-color: #333; /* Footer background color */
+    color: white; /* Footer text color */
+    padding: 20px 0; /* Padding for top and bottom */
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lecturer-in-charge {
+    color: #889BC3 !important; 
+}
